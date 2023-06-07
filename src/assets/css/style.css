@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+a {
+    outline: none;
+}
+
+img {
+    border: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+:root{
+    --primary-color: #0eb1a2;
+    --white-color: #ffffff;
+}
+
+body{
+    font-family: 'Sriracha', cursive;
+    background: url(../images/11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.NavBar{
+    background: var(--primary-color);
+    display: none;
+}
+
+.NavBar .navbar-nav a{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.todoContainer {
+    max-width: 600px;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    margin: 150px auto;
+    background: rgba(0, 0, 0, 0.085);
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background: var(--white-color);
+    border-radius: 10px;
+}
+.todoText {
+    font-size: 16px;
+    color: rgb(54, 54, 54);
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;
+    width: 80%;
+    word-break: break-all;
+}
+.todo .todoAction button{
+    margin-left: 5px;
+}
+
+.formGroup{
+    position: relative;
+}
+.formGroup .form-control{
+    height: 80px;
+    margin-bottom: 15px;
+    padding-right: 80px;
+}
+
+.formGroup .form-control:focus{
+    box-shadow: none;
+}
+.formGroup .addBtn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 74px;
+    font-size: 30px;
+}
